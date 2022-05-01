@@ -20,7 +20,7 @@ public class WindowAnimationScript : MonoBehaviour
 		mainWindow.LeanMoveLocalX(-Screen.width, 1).setEaseInExpo().setOnComplete(Complete);
 	}
 
-	public void Complete()
+	private void Complete()
 	{
 		gameObject.SetActive(false);
 	}

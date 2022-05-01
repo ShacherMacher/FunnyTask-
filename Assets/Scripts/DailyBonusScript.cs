@@ -3,7 +3,7 @@ using UnityEngine.UI;
 
 public class DailyBonusScript : MonoBehaviour
 {
-	void Awake()
+	private void Awake()
 	{
 		gameObject.GetComponent<Text>().text = $"{System.Math.Round(GetCoinsAmount(CalculateDayOfSeason()))}";
 	}
